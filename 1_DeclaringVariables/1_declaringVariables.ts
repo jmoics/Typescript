@@ -39,6 +39,9 @@ var productDesc;
 /* ReDeclaring variables with let in the same scope is not permited */
 let productPrice;
 let productPrice;
+if (true) {
+    let productPrice; // in different scope yes
+}
 
 const productBrand = "Adidas";
 productBrand = "Avivas"; //Cannot reassign value (no compile)
