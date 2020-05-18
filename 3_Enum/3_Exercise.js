@@ -16,23 +16,24 @@ function getMobileByColor(color, image) {
         prodPrice = MobilePrice.gold;
         prodStatus = 'Available';
         prodDisc = 15;
-        prodImage = 'images/SamsungGalaxy_Gold.jpg';
+        prodImage = '../images/SamsungGalaxy_Gold.jpg';
     }
     else if (color === 'pink') {
         prodPrice = MobilePrice.pink;
         prodStatus = 'Unavailable';
         prodDisc = 10;
-        prodImage = 'images/SamsungGalaxy_Pink.jpg';
+        prodImage = '../images/SamsungGalaxy_Pink.jpg';
     }
     else {
         prodPrice = MobilePrice.silver;
         prodStatus = 'Available';
         prodDisc = 8;
-        prodImage = 'images/samsung_edge_silver.jpg';
+        prodImage = '../images/samsung_edge_silver.jpg';
     }
     document.getElementById('pPrice').innerHTML = "" + prodPrice;
     document.getElementById('pAvailable').innerHTML = prodStatus;
     document.getElementById('pDiscount').innerHTML = "" + prodDisc;
+    //document.getElementById('phoneImage').src = prodImage;
     image.src = prodImage;
 }
 document.getElementById('gold').innerHTML = "" + MobilePrice.gold;
