@@ -14,3 +14,8 @@ There are some differences with Typescript and Javascript functions.
 - Default parameters  TS(supports), JS(Supported with ES2015)
 - Rest parameters:  TS(supports), JS(Supported with ES2015)
 */
+
+/*
+Function types is a combination of parameter types and return type. Functions can be assigned to variables.
+While assigning a function to a variable make sure that the variable declaration is same as the assigned function’s return type.
+*/

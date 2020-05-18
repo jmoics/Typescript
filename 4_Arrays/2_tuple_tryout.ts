@@ -9,7 +9,7 @@ productAvailable = ['Samsung Galaxy J7', true];
 
  // Adding new value to Tuple
 productAvailable.push('Samsung Galaxy J5', false);
-productAvailable.push(false,"Samsung Galaxy S5"); //it works too but affects the analysis below, productAvailable in for is took as a simple variable.
+productAvailable.push(false,"Samsung Galaxy S5"); //it works too but affects the analysis below, productAvailable in the loop for is took as a simple variable.
 
 // logic to check product availability based on datatype of declared Tuple variable
 for (const item of productAvailable) {

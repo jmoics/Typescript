@@ -8,16 +8,16 @@ var getProductDetails = (productId: string): string => {return "Product ID" + pr
 /*-----------------------------------------------------------------*/
 class Product {
     productName: string = "Mobile";
-    getProductDetails(): string {
+    getProductDetails(): string { //Method
         return "Product: " + this.productName; //It has Product class scope, so we can access to productName
     }
 
     testThisFunction() {
         setTimeout(function() {
-            console.log(this.productName); //It has current funciton scope as it's used within call back function. Hence we can't access to productName (in console will show undefined)
+            console.log(this.productName); //It has current function scope as it's used within call back function. Hence we can't access to productName (in console will show undefined)
         }, 0);
     }
-}
+} 
 var prod = new Product();
 prod.testThisFunction();
 
