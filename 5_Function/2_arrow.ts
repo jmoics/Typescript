@@ -22,14 +22,13 @@ var prod = new Product();
 prod.testThisFunction();
 
 /* 
-   In a class, if a method wants to access the property of the class it has to use "this" keyword.
-   For a particular object, "this" keyword will help to access the properties of the current object. This is possible, because all the methods and properties are with in the same scope.
-   In the above example, when we use this.productName inside the getProductDetails method, getProdcutDetails and productName are in the same scope. Also we get the desired result.
-   But when we use this.productName inside setTimeout function, instead of directly using it in testThisFunction method, the scope of this.productName will be inside the setTimeout's callback function and not the testThisFunction method. That is why we are not able to access the value of productName for that particular object.
-   If we need to access the class scope with this keyword inside the callback function we can use arrow function.
-   Arrow function lexically captures the meaning of the this keyword.
+    En una clase, si un metodo desea acceder a un atributo de clase, se tiene que usar "this".
+    Para un objeto en particular, "this" ayudará a acceder a los atributos del objeto. Esto es posible porque todos los métodos y atributos están en el mismo ámbito (scope)
+    En el ejemplo debajo, cuando usamos this.productName dentro del método getProductDetails, getProductDetails y productName estan en el mismo ámbito. Así conseguimos el resultado deseado.
+    Pero cuando usamos this.producName dentro de la función setTimeout, en lugar de usarlo directamente en el método testThisFunction, el scope de this.productName estará dentro de la llamada a si mismo de la función setTimeout y no dentro del método testThisFunction. Por ello no tendremos acceso al valor productName para ese objeto en particular.
+    Si necesitamos acceder al scope de la clase con "this", podremos hacerlo utilizando la función "arrow".
 
-   We can rewrite the same logic using arrow function as below:
+    Podemos reescribir la misma logica utilizando la función arrow:
 */
 
 class Product2 {
@@ -43,6 +42,12 @@ class Product2 {
             console.log(this.productName); //It has Product class scope as it's defined using Arrow function. Hence we can access to productName.
         }, 0);
     }
+
+    /*testThisFunction2() {
+        setTimeout(function() {
+            console.log(this.productName); //It has not Product class scope.
+        }, 0);
+    }*/
 }
 var prod = new Product2();
 prod.testThisFunction();
