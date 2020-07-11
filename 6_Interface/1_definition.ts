@@ -10,7 +10,7 @@ function createCustomerID(name: string, id: number): string {
 // Definiendo interfaz con declaracion de funciones. Solo se proporciona parametros y tipo de retorno.
 interface StringGenerator {
     (char: string, nums: number): string;
-    //(chars: string): string; // error de compilación en la asignación de la función a la variable.
+    // (char: string): string; // error de compilación en la asignación de la función a la variable (abajo).
 }
 
 // Se declara la variable con la interfaz como tipo.

@@ -1,4 +1,5 @@
-// Podemos hacer uso de la interfaz para definir tipos de clase para hacer cumplir explícitamente que una clase cumpla con un contrato en particular. Utilizamos la palabra clave implements para implementar la interfaz dentro de una clase.
+// Podemos hacer uso de la interfaz para definir tipos de clase para hacer cumplir explícitamente que una clase cumpla con un contrato en particular. 
+// Utilizamos la palabra clave implements para implementar la interfaz dentro de una clase.
 // Para imponer el tipo de interfaz en una clase, mientras se crea una instancia del objeto de una clase, se declara utilizando el tipo de interfaz.
 // Solo las funciones y propiedades declaradas por la interfaz estarán disponibles con el objeto instanciado.
 

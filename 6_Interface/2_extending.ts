@@ -11,7 +11,7 @@ interface ProductList extends Category, Product {
     list: Array<string>;
 }
 
-// declarando variable de tipo ProductList
+// declarando variable de tipo ProductList (debe contener todos los atributos de las interfaces)
 const productDetails: ProductList = {
     categoryName: 'Gadget',
     productName: 'Mobile',

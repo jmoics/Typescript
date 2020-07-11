@@ -23,8 +23,8 @@ interface Product {
 function getProductDetails(productObj: Product): string {
     return 'The product name is : ' + productObj.productName;
 
-    // No compila debido a que productCategory no esta declarado en la interfaz
-    // return 'The product name is : ' + productObj.productName + ' and product category is : ' + productObj.productCategory;
+    // No compila debido a que productPrice no esta declarado en la interfaz
+    // return 'The product name is : ' + productObj.productName + ' and product price is : ' + productObj.productPrice;
 }
 
 // Forma correcta de usar el tipo interfaz

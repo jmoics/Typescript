@@ -1,0 +1,13 @@
+{   
+    "compilerOptions": {  
+            "target": "es5",   
+            "outDir": "Outfile",
+            "sourceMap": true,
+            "watch":true
+        },   
+    "files": [    
+            "1_namespaceDemo.ts",
+            "1_namespaceImport.ts"
+    ]
+}
+ 

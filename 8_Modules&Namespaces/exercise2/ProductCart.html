@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+  <head>
+       <title>Mobile Cart</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ <style>
+	 .navbar-inverse {
+  background-color:#005580;
+  background-image: none;
+  background-repeat: no-repeat;
+	color:#ffffff;
+ }
+ .navbar-inverse .navbar-nav > .active > a {
+    color: #ffffff;
+    background-color:transparent;
+	
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+	 text-decoration: none;
+   
+}
+.panel panel-primary{
+background-color:#005580;
+}
+.table {
+    width: 100%;
+    max-width: 100%;   
+}
+	 </style>  
+  </head>
+  <body onload="pageOnload();">
+       <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mobile Cart</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li ><a href="Index.html">Home</a></li>
+           
+          </ul>
+        <!--/.nav-collapse -->
+        
+      </div>
+     
+    </nav>
+   	<div class='panel panel-primary'
+	style="position: relative; top: 100px; left: 350px; align: center; width: 53%" id="cart">
+	<div class='panel-heading'>MobileCart</div>
+	<div class='panel-body'>	
+		<table class='table'  id="cartTable" align="center" style="margin-left: 90px; width: auto; margin-bottom: 0px; margin-right: 0px">
+			<thead>
+				<tr style="color: blue">
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Price</th>
+					<th>Total Price</th>						
+				</tr>
+			</thead>
+			<tbody id="cartBody">
+			</tbody>
+		</table>
+	</div>
+		<div class='panel-footer'>
+		<button type="button" class="btn btn-default" onclick="backProduct();" 
+								style="color: #ff0080;margin-left: 150px;">
+								<span  class="glyphicon glyphicon-shopping-cart"></span> Continue Shopping
+		</button>
+	
+		<button type="button" class="btn btn-success" onclick="checkOut();"	>
+			Checkout <span class="glyphicon glyphicon-play"></span>
+		</button>
+	</div>
+</div>
+<div id="successmessage" class='panel panel-primary'
+	style="position: relative; top: 200px; left: 450px; align: center; width: 40%;display:none">
+	<div class='panel-heading'>MobileCart</div>
+	<div class='panel-body'>Thank you for making the payment. Your
+		order will be shipped soon...</div>
+	<div class='panel-footer'>
+		<a class='btn btn-default' onclick="backProduct();" 
+			style="color: #ff0080"> <i
+			class='glyphicon glyphicon-chevron-left'></i> Go to Products Page
+		</a>
+	</div>
+</div>
+  </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <!-- Adding the converted js file -->
+     <script src="productCart.js"></script>
+</html>
+ 
